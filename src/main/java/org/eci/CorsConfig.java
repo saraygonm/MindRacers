@@ -12,7 +12,7 @@ public class CorsConfig implements WebMvcConfigurer {
     @Override
     public void addCorsMappings(CorsRegistry registry) {
         registry.addMapping("/**")
-                .allowedOriginPatterns("https://black-plant-0c6e9c60f.5.azurestaticapps.net") // Cambia esto por la URL de tu frontend si es diferente
+                .allowedOriginPatterns("*") // Cambia esto por la URL de tu frontend si es diferente
                 .allowedMethods("GET", "POST", "PUT", "DELETE", "OPTIONS")
                 .allowedHeaders("*")
                 .allowCredentials(true);
